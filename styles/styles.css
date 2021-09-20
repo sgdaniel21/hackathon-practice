@@ -1,0 +1,560 @@
+/* Color codes and samples
+
+.dark-blue {
+  background-color: #252260;
+  width: 200px;
+  height: 100px;
+}
+.medium-blue {
+  background-color: #676ce4;
+  width: 200px;
+  height: 100px;
+}
+.light-blue {
+  background-color: #c0c0f6;
+  width: 200px;
+  height: 100px;
+}
+.yellow {
+  background-color: #eeff04;
+  width: 200px;
+  height: 100px;
+}
+
+/* General  */
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+}
+
+/* Navbar */
+
+.navbar-expand-lg {
+  background-color: #252260;
+}
+
+.header-logo {
+  width: 150px;
+}
+
+.nav-link {
+  color: #fff;
+}
+
+.nav-link:hover {
+  color: #c0c0f6;
+}
+
+/* Header */
+.header-container {
+  padding: 0;
+}
+
+#header {
+  color: white;
+}
+
+.header-title {
+  padding-top: 7%;
+  text-align: left;
+  font-size: 400%;
+  display: block;
+  letter-spacing: 5px;
+}
+
+.header-date {
+  padding-top: 3%;
+  text-align: left;
+  font-size: 200%;
+}
+
+.header-text {
+  text-align: left;
+  padding: 3% 0;
+}
+
+.call-to-action-header-button {
+  background-color: #eeff04;
+  width: 30%;
+  margin: 1% 0;
+  padding: 1% 2%;
+  text-align: center;
+}
+
+.call-to-action-header-button:hover {
+  color: #676ce4;
+}
+
+.call-to-action-header-button-sponsor {
+  background-color: #c0c0f6;
+  width: 30%;
+  padding: 1% 2%;
+  margin: 1% 0;
+  text-align: center;
+  color: #fff;
+}
+
+/* Challenges */
+
+#expanding-cards-sample {
+  display: flex;
+  width: 90vw;
+}
+.expanding-cards {
+  text-align: center;
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+}
+.panel {
+  position: relative;
+  cursor: pointer;
+  margin: 0 10px;
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50px;
+  color: white;
+  height: 80vh;
+  flex: 0.2;
+  transition: flex 500ms ease-in;
+}
+.panel h3 {
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+  margin: 0;
+  opacity: 0;
+  transition: opacity 200ms ease-in 300ms;
+}
+.panel.active {
+  flex: 1;
+}
+.panel.active h3 {
+  opacity: 1;
+}
+
+/* Judging criteria */
+
+/* Agenda */
+
+/* Prizes */
+
+#prizes-content {
+  background-color: #252260;
+  padding: 30px;
+  color: #fff;
+}
+
+.prizes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.prize-amount,
+.prize-amount-other-prizes,
+.prizes-container {
+  margin-bottom: 30px;
+}
+
+.prize-amount-other-prizes,
+.prizes-cards p {
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+}
+
+.call-to-action-prizes {
+  background-color: #eeff04;
+  color: #fff;
+  padding: 2% 6%;
+  margin: 6% 0;
+  border-radius: 15%;
+}
+
+.prizes-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.prizes-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 200px;
+  text-align: center;
+}
+
+.prizes-image-container {
+  width: 100px;
+  background-color: #676ce4;
+  border-radius: 100%;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+
+.prizes-image-container img {
+  width: 100%;
+}
+
+/* About */
+
+#about {
+  background-color: #c0c0f6;
+  text-align: center;
+}
+
+.about-dsai,
+.about-d4sg {
+  padding: 3% 2%;
+  color: #252260;
+}
+
+.about-heading {
+  padding: 3% 0;
+}
+
+.about-text {
+  text-align: left;
+  line-height: 2.5;
+  color: rgb(82, 79, 79);
+}
+
+.about-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Participant Registration */
+
+#participant-registration {
+  background-color: #c0c0f6;
+  text-align: center;
+}
+
+.participant-register {
+  padding: 3% 2%;
+  color: #252260;
+}
+
+.participant-register-heading {
+  padding: 3% 0;
+}
+
+/* Become a sponor */
+
+.becomeSponsor {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+  background-color: #252260;
+}
+
+.becomeSponsor h1 {
+  width: 25%;
+  margin: 25px auto;
+}
+
+.paragraph {
+  max-width: 70%;
+  margin: 25px auto;
+}
+
+.becomeSponsor p {
+  margin: 50px auto;
+  font-size: 25px;
+}
+
+.btnSponsor {
+  border: none;
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 15px;
+  margin-top: 20px;
+  background-color: #eeff04;
+}
+
+/* Existing sponsors */
+
+/* Participant Registration */
+
+#participant-registration {
+  background-color: #c0c0f6;
+  text-align: center;
+}
+
+.participant-register {
+  padding: 3% 2%;
+  color: #252260;
+}
+
+.participant-register-heading {
+  padding: 3% 0;
+}
+
+/* Footer */
+
+.footer {
+  height: 300px;
+  background-color: #252260;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.footer-content {
+  display: flex;
+  width: 100%;
+}
+
+.footer-logo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-image {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.footer-image img {
+  width: 300px;
+}
+
+.social-medias {
+  height: 25px;
+  width: 150px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-medias a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.social-medias a img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.footer-navigation {
+  width: 80%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-navigation ul {
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+
+.copyright {
+  color: #fff;
+  text-align: center;
+}
+
+/* Resposnive settings */
+
+/* @media (max-width: 962px) {
+} */
+
+/* Particles.js Module */
+
+/* ---- reset ---- */
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+/* ---- particles.js container ---- */
+#particles-js {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: #252260;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+/* ---- stats.js ---- */
+.count-particles {
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13e8e9;
+  font-size: 0.8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.js-count-particles {
+  font-size: 1.1em;
+}
+
+#stats,
+.count-particles {
+  -webkit-user-select: none;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+#stats {
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+
+.count-particles {
+  border-radius: 0 0 3px 3px;
+}
+
+
+/* --------------challenges---------------- */
+
+
+#challenges {
+  background-color: #c0c0f6;
+  width:100%;
+  padding: 30px;
+  color: #fff;
+  text-align: center;
+}
+.challenges_oversec{
+  text-align: center;
+  width: 100%;
+  background-color: #c0c0f6;
+  color: #252260;
+}
+.challenges_cardsec{
+  margin: auto;
+  position: relative;
+  background-color: #c0c0f6;
+  width:auto;
+  text-align: center;
+  }
+
+.challenge{
+  text-align: center;
+  padding: 30px;
+  border-radius: 100%;
+  margin-bottom: 20px;
+
+}
+.challenge-body{
+  background-color:  #252260;
+  padding: 10px;
+  font-weight: 400;
+  position: relative;
+  height:250px;
+  padding-bottom: 30px;
+  border-radius: 0px 0px 10px 50px;
+  }
+
+.card-icon{
+  position: absolute;
+  margin:57% 31% 0% 39%;
+  width:22%;
+  z-index:2;
+}
+
+.card-circle{
+  position: absolute;
+  border-radius: 20px;
+  margin:52.5% 32.5% 0% 34%;
+  width:32%;
+  z-index:1;
+}
+
+.challenge-title{
+  padding-top: 20%;
+  padding-bottom: 15%;
+  height:45%;
+}
+.challenge-link{
+  text-decoration: none;
+  color:#fff;
+}
+a.challenge-link:hover,a.challenge-link:active
+{color: #eeff04;
+font-size: 110%
+}
+
+.challenge-text{
+  padding-bottom:5%;
+}
+@media only screen and (max-width: 768px) {
+.challenge-text {
+    font-size: auto;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .challenges_oversec{
+    position: absolute;
+  font-size: 50px;
+  text-align: center;
+  width: 100%;
+  background-color: #c0c0f6;
+  color: #252260;
+}
+}
+.cardimg{
+  width:5%;
+}
+
+@media only screen and (max-width: 768px) {
+  .challenge-body{
+    background-color:  #252260;
+    padding: 10px;
+    font-weight: 400;
+    position: relative;
+    width:auto;
+    }
+  }
+.cardchallenge{
+  border-radius: 15px 50px 30px 50px;
+}
+.card-img-top{
+  border-radius:15px 50px 0px 0px;
+}
